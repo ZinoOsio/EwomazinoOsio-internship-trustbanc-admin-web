@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="NewDashboard.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            
+                <ul style="margin-top: 85px;">
+                    <li><a href="#"><i class="fas fa-grip-vertical"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="far fa-user"></i>Individual</a></li>
+                    <li><a href="#"><i class="fas fa-user-tie"></i>Corporate</a></li>
+                    <li><a href="#"><i class="far fa-chart-bar"></i>Activities</a></li>
+                    <li><a href="#"><i class="fas fa-calculator"></i>Transactions</a></li>
+                    <li><a href="#"><i class="far fa-clone"></i>Approval Queue</a></li>
+                    <li><a href="#"><i class="fas fa-power-off"></i>Audit Trail</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+                </ul>
+        </div>
+        <div class="main_content">
+            <div class="header" style="padding-left: 50px;">Welcome! 
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn" style="color: #051C44;">Unyime</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Account</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+                
+                <a href="#"><i class="far fa-bell"></i>
+            </div>
+        </div>
+    </div>
+</head>
+    
+<body style="background-color: #e5e5e5;">
+    <div class="container">
+    <div class="row">
+    <div class="card">
+            <a href="#"><i class="fas fa-users" style=color:#5718FF;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">ACTIVE CUSTOMERS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">10,000</p>
+        </div>
+
+      <div class="card">
+            <a href="#"><i class="far fa-user-circle" style=color:#567890;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">DORMANT CUSTOMERS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">5,000</p>
+        </div>
+
+      <div class="card">
+            <a href="#"><i class="fas fa-wallet" style=color:#DD36A4;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">AMOUNT SAVED</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">N500,000,000</p>
+        
+            </div>
+      
+      <div class="card">
+            <a href="#"><i class="fas fa-calculator" style=color:#23BD86;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">TRANSACTIONS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">1,000,000</p>
+        </div>
+      </div>    
+
+      <div class="row">
+      <div class="card">
+            <a href="#"><i class="far fa-bell" style=color:#E0063C;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">TRANSACTION ERRORS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">10,000</p>
+        </div>
+
+      <div class="card">
+            <a href="#"><i class="far fa-user" style=color:#005ED6;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">USERS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">10,000</p>
+        </div>
+
+      <div class="card">
+            <a href="#"><i class="far fa-user" style=color:#00C9D6;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">NEW USERS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">10,000</p>
+        </div>
+
+      <div class="card">
+            <a href="#"><i class="far fa-user" style=color:#005ED6;></i>
+                <br>
+                <p style="color: #051C44; opacity: 0.6;">USERS</p>
+                
+                <p style="color: #051C44; font-weight: 500; font-size: 24px;">10,000</p>
+        </div>
+        </div>
+        <br>
+        
+    </div>
+
+    <div class="tablelabel">
+        <div class="header">
+
+            <div class="dropdown1">
+                <b><p>Recent activities</p></b>
+            </div>
+
+            <div class="dropdown">
+                <p>View all</p>
+            </div>
+
+        </div>
+    </div>
+
+   <div class="card" style="margin: 255px; width: 1200px; margin-top: 10px; padding-top:0px; padding-left:0px;"> 
+    
+    <table>
+      <thead>
+        <tr>
+          <th>CUSTOMER</th>
+          <th>PHONE</th>
+          <th>EMAIL</th>
+          <th>TYPE</th>
+          <th>AMOUNT</th>
+          <th>DATE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #051C44;
+        opacity: 0.8;">
+          <td data-label="Name"><span>Adedeji Olowe</span></td>
+          <td data-label="Phone No."><span>08078903721</span></td>
+          <td data-label="Email"><span>adedeji@trium.com</span></td>
+          <td data-label="Type"><span>Login</span></td>
+          <td data-label="Amount"><span>500,000.00</span></td>
+          <td data-label="Date"><span>June 15, 2020 3:20 AM</span></td>
+        </tr>
+        <tr style="font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #051C44;
+        opacity: 0.8;">
+            <td data-label="Name"><span>Debby Ogana</span></td>
+            <td data-label="Phone No."><span>08160780928</span></td>
+            <td data-label="Email"><span>debby@gmail.com</span></td>
+            <td data-label="Type"><span>Transfer</span></td>
+            <td data-label="Amount"><span>88,340.45</span></td>
+            <td data-label="Date"><span>June 15, 2020 3:20 AM</span></td>
+        </tr>
+        <tr style="font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #051C44;
+        opacity: 0.8;">
+            <td data-label="Name"><span>Joseph Benson-Aruna</span></td>
+            <td data-label="Phone No."><span>08060009226</span></td>
+            <td data-label="Email"><span>joeb@wallets.com</span></td>
+            <td data-label="Type"><span>Bulk transfer</span></td>
+            <td data-label="Amount"><span>530,00.90</span></td>
+            <td data-label="Date"><span>June 15, 2020 3:20 AM</span></td>
+        </tr>
+        <tr style="font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #051C44;
+        opacity: 0.8;">
+            <td data-label="Name"><span>Tosin Dokunmu</span></td>
+          <td data-label="Phone No."><span>09013309226</span></td>
+          <td data-label="Email"><span>tosin@lendsqr.com</span></td>
+          <td data-label="Type"><span>Airtime</span></td>
+          <td data-label="Amount"><span>530,00.90</span></td>
+          <td data-label="Date"><span>June 15, 2020 3:20 AM</span></td>
+          </tr>
+          <tr style="font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          color: #051C44;
+          opacity: 0.8;">
+            <td data-label="Name"><span>Grace Effiom</span></td>
+          <td data-label="Phone No."><span>07060780922</span></td>
+          <td data-label="Email"><span>grace@gmail.com</span></td>
+          <td data-label="Type"><span>Bill payments</span></td>
+          <td data-label="Amount"><span>500,000.00</span></td>
+          <td data-label="Date"><span>June 15, 2020 3:20 AM</span></td>
+          </tr>
+      </tbody>
+    </table>
+    </div> 
+</body>
+
+    
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

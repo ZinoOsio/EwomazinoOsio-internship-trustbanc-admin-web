@@ -1,0 +1,100 @@
+ #contact_form_div0 {
+        margin-top: 50px;
+    }
+    body {
+        background-color:  #FFFFFF;
+        margin:0 auto;
+        padding:0px;
+        text-align:center;
+        width:100%;
+        font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    }
+    
+    #wrapper
+    {
+     margin:0 auto;
+     padding:0px;
+     text-align:center;
+     width:995px;	
+    }
+    #wrapper h1
+    {
+     margin-top:50px;
+     font-size:45px;
+     color:#1B4F72;
+    }
+    #wrapper h1 p
+    {
+     font-size:18px;
+    }
+    #contact_form_div
+    {
+     width:320px;
+     margin-top: 45px;
+     margin-left:340px;
+     padding:10px;
+     background-color: #00399B;
+     border-radius: 6px;
+    }
+    #contact_form_div #contact_label
+    {
+     margin:15px;
+     margin-bottom:-10px;
+     font-size:18px;
+     font-weight:thin;
+     color:white;
+     text-align: left;
+     margin-left: 42px;
+    }
+    
+    #contact_form_div #contact_label1
+    {
+     margin:15px;
+     margin-bottom:30px;
+     font-size:13px;
+     font-weight:thin;
+     color:white;
+     text-align: left;
+     margin-left: 42px;
+    }
+    
+    #contact_form_div input[type="text"]
+    {
+     width:230px;
+     height:40px;
+     border-radius:2px;
+     font-size:12px;
+     padding-left:5px;
+     border:none;
+     background-color: #023182;
+     color: white;
+    }
+    
+    ::placeholder { /* Most modern browsers support this now. */
+       color:    white;
+       font-size: 12px;
+       padding-left: 10px;
+    }
+    
+    #contact_form_div textarea
+    {
+     width:230px;
+     height:70px;
+     border-radius:2px;
+     font-size:12px;
+     padding: 5px;
+    }
+    #contact_form_div input[type="submit"]
+    {
+     width:237px;
+     height:40px;
+     border:none;
+     border-radius:4px;
+     font-size:12px;
+     background-color:white;
+     color:#00399B;
+     font-weight:thin;
+     padding-left:5px;
+    }
+
+    

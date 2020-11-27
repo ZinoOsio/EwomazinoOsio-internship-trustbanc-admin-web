@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <div id="contact_form_div0">
+		    <img src="Asset 1-100.jpg" height="93px" width="100px">
+        </div>
+        <title>AdminSetup</title>
+    </head>        
+
+    <body>
+        
+        <div id="wrapper">
+
+            <div id="contact_form_div">
+                <p id="contact_label">Setup your account.</p>
+                <p id="contact_label1">Enter details to complete your profile.</p>
+             <form method="post" action="">
+                <p><input type="text" placeholder="First Name"></p>
+                <p><input type="text" placeholder="Last Name"></p>
+                <p><input type="password" placeholder="Password" id="pwd" class="masked" name="password">
+                    <button type="button" id="eye" style="margin-left: -40px;">
+                        <img src="https://cdn0.iconfinder.com/data/icons/feather/96/eye-16.png" alt="eye" />
+                    </button></p>
+                <p><input type="submit" value="Complete Profile"></p>
+             </form>
+            </div>
+            
+        </div> 
+    </body>
+
+    <script>
+        function show() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+    </script>
+
+</html>

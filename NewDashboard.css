@@ -1,0 +1,346 @@
+.wrapper {
+    display: flex;
+    position: relative;
+  }
+  
+  .wrapper .sidebar {
+    position: fixed;
+    width: 230px;
+    height: 1024px;
+    background: #00399B;
+    padding: 30px 0;
+    box-shadow: 3px 3px 10px rgba(0, 57, 155, 0.1);
+  }
+  
+  .wrapper .sidebar img{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 30px;
+  }
+  
+  .wrapper .sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .wrapper .sidebar ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+color: #FFFFFF
+  }
+  
+  .wrapper .sidebar ul li a .fas {
+    width: 50px;
+  }
+  
+  .wrapper .sidebar ul li a .far {
+    width: 50px;
+  }
+  
+  .wrapper .sidebar ul li:hover{
+    background: #023182;
+    border-radius: 25px 0px 0px 25px;
+    width: 210px;
+    height: 48px;
+  }
+  
+  .wrapper .sidebar ul li:hover a{
+    color: #fff;
+  }
+  
+  .wrapper .main_content {
+    width: 100%;
+    margin-left: 200px;
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #051C44;
+    border-bottom: 1px solid #e0e4e8;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  
+  .wrapper .main_content .header a .far{
+    color: #000000;
+    float: right;
+    margin-right: 35px;
+  }
+  
+  .wrapper .main_content .header .dropdown {
+    float: right;
+    margin-right: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #051C44;
+  }
+  
+  .asset {
+    float: right;
+    height: 20px; 
+    width: 30px;
+  }
+  
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #fff;
+    color: #051C44, 100%;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 100px;
+    text-align: left;
+    background: #FFFFFF;
+    border: 1px solid rgba(5, 28, 68, 0.04);
+    box-sizing: border-box;
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    margin-top: 22px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #051C44;
+    opacity: 0.8;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #051C44;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+  a .far{
+    margin-bottom: 15px;
+  }
+  
+  
+  /* Styles for card mode (presentational styles are marked as optional) */
+@media (max-width: 855px) {
+    table {
+      position: relative;
+      text-align: left;
+      padding: 30px;
+    }
+  
+    thead {
+      display: none;
+      text-align: left;
+    }
+  
+    tbody {
+      display: table;
+      text-align: left;
+    }
+  
+    tr {
+      
+      border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        text-align: left;
+    }
+  
+      tr:nth-child(odd) {
+        background-color: #f9f9f9; /* optional */
+      }
+  
+    td {
+        text-align: left;
+    }
+  
+      td:before,
+      td > span {
+        display: table-cell;
+        padding: 7px 13px; /* optional */
+        
+      }
+  
+      td:before {
+        content: attr(data-label);
+        font-weight: 600; /* optional */
+      }
+  
+      td:not(.align-start) > span {
+        vertical-align: middle; /* optional */
+      }
+  }
+  
+  /* Styles for normal mode (all are optional, presentational styles) */
+  @media (min-width: 856px) {
+    th {
+      
+      font-family: Roboto;
+      font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        text-transform: uppercase;
+
+        color: #567890;
+        top: 629px;
+        height: 15px;
+    }
+  
+    th, 
+    td {
+      padding: 7px 13px;
+      text-align: left;
+    }
+  
+      th:not(.align-start), 
+      td:not(.align-start) {
+        text-align: left;
+      }
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+
+  .container{
+    width: 100%;
+    margin: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+    .row{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding-left: 65px;
+    width: 1300px;
+  }
+  
+  .card{
+    width: 292px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 57, 155, 0.04);
+    box-shadow: 0px 0px 10px rgba(0, 57, 155, 0.04);
+    border-radius: 100px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Responsive media queries */    
+  
+  @media screen and (max-width: 1000px) {
+    .card{
+        width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container{
+        width: 100%;
+    }
+  
+    .heading{
+        padding: 20px;
+        font-size: 20px;
+    }
+  
+    .card{
+        width: 80%;
+    }
+  }
+  
+  .tablelabel .header .dropdown1{
+    
+    float: left;
+    margin-left: 255px;
+    color: #051C44;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .tablelabel .header .dropdown{
+    
+    float: right;
+    margin-right: 70px;
+    color: #D5711E;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+  }
+
+    
