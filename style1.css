@@ -1,0 +1,88 @@
+#contact_form_div0 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-left: 650px;
+}
+
+body {
+    background-color: #f5f7fb;
+    width:100%;
+    font-family: "Roboto";
+}
+
+#contact_form_div
+{
+ max-width:550px;
+ margin-top: -70px;
+ margin-left: 470px;
+ padding:30px;
+ background-color: #00399B;
+ border-radius: 10px;
+
+}
+
+#contact_form_div #contact_label {
+    margin:px;
+    margin-bottom:px;
+    font-size:32px;
+    font-weight:500;
+    color:white;
+    text-align: left;
+    margin-left: px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 37px;
+}
+
+#contact_form_div #contact_label1
+{
+ margin:px;
+ margin-bottom:px;
+ text-align: left;
+ margin-left: px;
+ font-family: Roboto;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+ line-height: 21px;
+ color: #FFFFFF;
+ opacity: 0.8;
+}
+
+#contact_form_div input[type="text"]
+{
+ width:470px;
+ height:60px;
+ border: none;
+ font-size:16px;
+ background-color: #023182;
+ border-radius: 6px;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    font-size: 12px;
+    padding-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.9;
+ }
+
+ #contact_form_div input[type="submit"]
+ {
+  width:478px;
+  height:60px;
+  border-radius:6px;
+  background-color:#FFFFFF;
+  color:#00399B;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+border: none;
+line-height: 19px;
+text-align: center;
+text-transform: capitalize;
+ }
